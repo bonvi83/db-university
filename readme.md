@@ -45,7 +45,7 @@ Dopo aver creato un nuovo database nel vostro phpMyAdmin e aver importato lo sch
 
     ```
     SELECT * FROM `students`
-    WHERE YEAR(`date_of_birth`) >= "1993";
+    WHERE YEAR(`date_of_birth`) >= '1993';
     ```
 
 4.  Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)
@@ -61,7 +61,7 @@ Dopo aver creato un nuovo database nel vostro phpMyAdmin e aver importato lo sch
     ```
     SELECT *
     FROM `exams`
-    WHERE DATE(`date`) = "2020-06-20" AND TIME(`hour`) > "14:00";
+    WHERE DATE(`date`) = '2020-06-20' AND TIME(`hour`) > '14:00';
     ```
 
 6.  Selezionare tutti i corsi di laurea magistrale (38)
@@ -69,7 +69,7 @@ Dopo aver creato un nuovo database nel vostro phpMyAdmin e aver importato lo sch
     ```
     SELECT *
     FROM `degrees`
-    WHERE `level` = "magistrale";
+    WHERE `level` = 'magistrale';
     ```
 
 7.  Da quanti dipartimenti è composta l'università? (12)
