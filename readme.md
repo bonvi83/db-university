@@ -90,6 +90,16 @@ Dopo aver creato un nuovo database nel vostro phpMyAdmin e aver importato lo sch
 
 8.  Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
+    questo è il numero:
+
+    ```
+    SELECT COUNT(id)
+    FROM `teachers`
+    WHERE `phone` IS NULL;
+    ```
+
+    questa è la lista:
+
     ```
     SELECT *
     FROM `teachers`
